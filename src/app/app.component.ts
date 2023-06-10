@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'intro-angular-idgs904';
+
+  duplicaValor(valor: number): number {
+    return valor * 2;
+  }
+
+  Alumnos = {
+    matricula: 1234,
+    nombre: 'Brenda',
+    fechaNacimiento: new Date()
+  };
 }
