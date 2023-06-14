@@ -1,14 +1,28 @@
-<p>¡Hola mundo!</p>
+<div class="container">
+  <div class="row">
+    <p>¡Hola mundo!</p>
 
-<div>
-  {{title}}
+    <div>
+      {{title}}
+    </div>
+
+    <div> La suma de 2 + 2 es: {{2+2}}</div>
+
+    <div>El doble de 3 es: {{duplicaValor(3)}}</div>
+
+    <h2>Alumno IDGS904 </h2>
+    <div><b>Matrícula:</b> {{Alumnos.matricula}}</div>
+    <div><b>Nombre:</b> {{Alumnos.nombre}}</div>
+    <!-- pipe es para dar formatos (date, currency) -->
+    <div><b>Fecha de Nacimiento:</b> {{Alumnos.fechaNacimiento | date}}</div>
+    <div><b>Costo de Inscripción:</b> {{Alumnos.pagoIns | currency}}</div>
+
+    <hr>
+    <!-- Llamamos el component que creamos -->
+    <app-school></app-school>
+    <hr>
+    <ievn-app></ievn-app>
+    <hr>
+    <app-iric></app-iric>
+  </div>
 </div>
-
-<div> La suma de 2 + 2 es: {{2+2}}</div>
-
-<div>El doble de 3 es: {{duplicaValor(3)}}</div>
-
-<h2>Alumno IDGS904 </h2>
-<div>Matrícula: {{Alumnos.matricula}}</div>
-<div>Nombre: {{Alumnos.nombre}}</div>
-<div>Fecha de Nacimiento: {{Alumnos.fechaNacimiento}}</div>
