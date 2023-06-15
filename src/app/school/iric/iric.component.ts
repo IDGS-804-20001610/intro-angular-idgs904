@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { IAlumns } from 'src/app/escuela/alumnsir';
 
 @Component({
   selector: 'app-iric',
@@ -6,8 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./iric.component.css']
 })
 export class IricComponent {
+
+  imageWidth: number = 50;
+  imageMargin: number = 2;
+  muestraImg: boolean = true;
+  listFilter: string = '';
+
   //alumnos : any[] = []
-  alumnos : any[] = [
+  alumnosIric : IAlumns[] = [
     {
       "matricula": 1234,
       "nombre": "Barry Rodriquez",
@@ -33,4 +40,8 @@ export class IricComponent {
       "foto": "https://randomuser.me/api/portraits/men/12.jpg"
     },
   ]
+
+  showImage(): void {
+    this.muestraImg =! this.muestraImg;
+  }
 }
