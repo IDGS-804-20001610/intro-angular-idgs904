@@ -8,6 +8,9 @@ import { ievnComponent } from './school/ievn.component';
 import { IricComponent } from './school/iric/iric.component';
 import { MenuComponent } from './school/menu/menu.component';
 import { FormsModule } from '@angular/forms';
+import { AddComponent } from './school/forms/add/add.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { OperasModule } from './school/forms/operas/operas.module';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,16 @@ import { FormsModule } from '@angular/forms';
     schoolComponent,
     ievnComponent,
     IricComponent,
-    MenuComponent
+    MenuComponent,
+    AddComponent,
   ],
   imports: [
     BrowserModule,
     //Importamos
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    //Módulos
+    OperasModule
   ],
   providers: [],
   bootstrap: [AppComponent]
