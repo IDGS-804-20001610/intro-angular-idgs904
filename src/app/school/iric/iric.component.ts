@@ -21,7 +21,8 @@ export class IricComponent {
       "edad": 20,
       "correo": "barry.rodriquez@example.com",
       "pago": 129.42,
-      "foto": "https://randomuser.me/api/portraits/men/42.jpg"
+      "foto": "https://randomuser.me/api/portraits/men/42.jpg",
+      "calif": 6
     },
     {
       "matricula": 5678,
@@ -29,7 +30,8 @@ export class IricComponent {
       "edad": 21,
       "correo": "vicki.cook@example.com",
       "pago": 129.42,
-      "foto": "https://randomuser.me/api/portraits/women/18.jpg"
+      "foto": "https://randomuser.me/api/portraits/women/1.jpg",
+      "calif": 4
     },
     {
       "matricula": 9012,
@@ -37,7 +39,8 @@ export class IricComponent {
       "edad": 22,
       "correo": "randall.perry@example.com",
       "pago": 129.42,
-      "foto": "https://randomuser.me/api/portraits/men/12.jpg"
+      "foto": "https://randomuser.me/api/portraits/men/12.jpg",
+      "calif": 3
     },
   ]
 
