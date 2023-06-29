@@ -27,7 +27,7 @@
                         <th>Edad</th>
                         <th>Correo</th>
                         <th>Pago</th>
-                        <th>Calificación</th>
+                        <th>Calificación{{alumnoTitle}}</th>
                         <th></th>
                         <!--Llamamos mediente el evento click la función de mostrar imagen-->
                         <th><button (click)="showImage()" class="btn btn-primary">
@@ -42,7 +42,8 @@
                         <td>{{alumno.correo}}</td>
                         <td>{{alumno.pago | currency}}</td>
                         <td>{{alumno.calif}}</td>
-                        <td><app-calificacion-alum [califica]="alumno.calif"></app-calificacion-alum></td>
+                        <td><app-calificacion-alum (calificaClick)="onCalificaClick($event)"
+                            [califica]="alumno.calif"></app-calificacion-alum></td>
                         <!--Enlace de propiedad-->
                         <td><img *ngIf="muestraImg" [src]="alumno.foto"
                             [title]="alumno.nombre"

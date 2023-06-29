@@ -7,12 +7,13 @@ import { schoolComponent } from './school/school.component';
 import { ievnComponent } from './school/ievn.component';
 import { IricComponent } from './school/iric/iric.component';
 import { MenuComponent } from './school/menu/menu.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddComponent } from './school/forms/add/add.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { OperasModule } from './school/forms/operas/operas.module';
 import { AlumnosFilterPipe } from './school/alumnos-filter.pipe';
 import { CalificacionAlumComponent } from './school/calificacion-alum/calificacion-alum.component';
+import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { CalificacionAlumComponent } from './school/calificacion-alum/calificaci
     AddComponent,
     AlumnosFilterPipe,
     CalificacionAlumComponent,
+    AlumnoReactiveComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { CalificacionAlumComponent } from './school/calificacion-alum/calificaci
     FormsModule,
     BrowserAnimationsModule,
     //Módulos
-    OperasModule
+    OperasModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
