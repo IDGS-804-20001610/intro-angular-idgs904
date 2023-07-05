@@ -14,6 +14,7 @@ import { OperasModule } from './school/forms/operas/operas.module';
 import { AlumnosFilterPipe } from './school/alumnos-filter.pipe';
 import { CalificacionAlumComponent } from './school/calificacion-alum/calificacion-alum.component';
 import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-reactive.component';
+import { AppRoutingModule } from './app.routing.module';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { AlumnoReactiveComponent } from './formularios/alumno-reactive/alumno-re
     BrowserAnimationsModule,
     //Módulos
     OperasModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
